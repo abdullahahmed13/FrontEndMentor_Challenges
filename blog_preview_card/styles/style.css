@@ -1,0 +1,114 @@
+/*
+    File: style.css
+    Author: Abdullah Ahmed
+    Date: 
+    Version: 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    /* Colors */
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+
+    /* Fonts */
+    --paragraph-font-size: 16px;
+    --light-font-weight: 500;
+    --bold-font-weight: 800;
+}
+
+* {
+    font-family: "Figtree";
+}
+body {
+    margin: auto;
+    background-color: var(--yellow);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog_card {
+    width: 340px;
+    box-sizing: content-box;
+    border-radius: 20px;
+    border: 1.5px;
+    border-color: var(--black);
+    border-style: solid;
+    padding: 22px 22px 0px 22px;
+    background-color: var(--white);
+
+    /* Shadows */
+    box-shadow: 9px 9px var(--black);
+
+}
+
+.card_image {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.card_button {
+    border-radius: 3px;
+    background-color: var(--yellow);
+    color: var(--black);
+    font-weight: var(--bold-font-weight);
+    border: 0px;
+    padding: 5px 9px 5px 9px;
+}
+
+h2 {
+    font-weight: var(--bold-font-weight);
+}
+
+h2:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.grey_paragraph {
+    color: var(--grey);
+    font-weight: var(--light-font-weight);
+}
+
+.person_info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.person_info h4 {
+    font-weight: var(--bold-font-weight);
+}
+
+.avatar_image {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+/* Media Queries for mobile devices responsive design */
+
+@media (max-width: 480px){
+
+    .blog_card {
+        width: 295px;
+        padding: 20px 20px 0px 20px;
+    }
+
+    h2 {
+        font-size: -20%;
+    }
+
+    .grey_paragraph {
+        font-size: 15px;
+    }
+
+}
